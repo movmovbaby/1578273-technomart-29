@@ -300,9 +300,17 @@ img {
   list-style: none;
 }
 .service-item {
+  color: var(--main-white);
+  background-color: var(--main-dark);
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+}
+.service-item:hover {
+  background-color: var(--main-darken);
+}
+.service-active {
+  background-color: var(--main-white);
   color: var(--main-dark);
 }
 
