@@ -31,7 +31,7 @@
   --promo-background-brown: #d2b48c;
   --promo-button-background: rgba(255, 255, 255, 0.3);
   --promo-button-background-hover: rgba(197, 197, 197, 0.3);
-  --promo-button-background-focus: rgba(169, 169, 169, 0.3);
+  --promo-button-background-active: rgba(169, 169, 169, 0.3);
   --footer-promo-brown: #ffd180;
 }
 *,
@@ -60,6 +60,8 @@ img {
 .button {
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--main-white);
+  text-align: center;
+  vertical-align: middle;
 }
 /* HEADER */
 .header {
@@ -79,8 +81,8 @@ img {
   color: var(--main-white);
 }
 
-.menu-bookmarks:focus,
-.menu-shopping-cart:focus {
+.menu-bookmarks:active,
+.menu-shopping-cart:active {
   background-color: var(--menu-link-clicked);
   /*  color: var(--menu-button-clicked);*/
   opacity: 0.5;
@@ -93,7 +95,7 @@ img {
 .menu-add-to-cart-button:hover {
   background-color: var(--main-green-hover);
 }
-.menu-add-to-cart-button:focus {
+.menu-add-to-cart-button:active {
   /* color: var(--menu-button-clicked); */
   opacity: 0.5;
 }
@@ -140,8 +142,8 @@ img {
 .registration-link:hover {
   color: var(--main-red);
 }
-.login-link:focus,
-.registration-link:focus {
+.login-link:active,
+.registration-link:active {
   color: var(--basic-gray);
 }
 /* end of header login and registration */
@@ -160,7 +162,7 @@ img {
   background-color: var(--main-darken);
 }
 
-.main-navigation a:focus {
+.main-navigation a:active {
   opacity: 0.5;
 }
 /* end of site navigation */
@@ -190,8 +192,8 @@ img {
 .promo-list-button:hover {
   background-color: var(--promo-button-background-hover);
 }
-.promo-list-button:focus {
-  background-color: var(--promo-button-background-focus);
+.promo-list-button:active {
+  background-color: var(--promo-button-background-active);
 }
 
 .list-item-first {
@@ -235,7 +237,7 @@ img {
 .promo-slider-button:hover {
   background-color: var(--main-red-hover);
 }
-.promo-slider-button:focus {
+.promo-slider-button:active {
   background-color: var(--main-red-clicked);
 }
 
@@ -378,7 +380,7 @@ img {
 .footer-navigation-link:hover {
   text-decoration: underline;
 }
-.footer-navigation-link:focus {
+.footer-navigation-link:active {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -400,7 +402,7 @@ img {
 .footer-promo-link:hover {
   text-decoration: underline;
 }
-.footer-promo-link:focus {
+.footer-promo-link:active {
   opacity: 0.5;
   text-decoration: none;
 }
