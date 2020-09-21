@@ -23,6 +23,7 @@
 
   --basic-gray: #c5c5c5;
   --basic-gray-hover: #b5b5b5;
+  --crossout-gray: #a9a9a9;
 
   --promo-orange: #ffc047;
   --promo-light-blue: #3bbce3;
@@ -62,7 +63,18 @@ img {
   color: var(--main-white);
   text-align: center;
   vertical-align: middle;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--main-red);
 }
+
+.new-die {
+  background-color: var(--main-red);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
 /* HEADER */
 .header {
   background: var(--main-background);
@@ -91,6 +103,8 @@ img {
 .menu-add-to-cart-button {
   background-color: var(--main-green);
   color: var(--main-white);
+  font-size: 18px;
+  line-height: 24px;
 }
 .menu-add-to-cart-button:hover {
   background-color: var(--main-green-hover);
@@ -185,8 +199,6 @@ img {
 .promo-list-button {
   background-color: var(--promo-button-background);
   color: var(--main-white);
-  font-size: 14px;
-  line-height: 18px;
   text-transform: uppercase;
 }
 .promo-list-button:hover {
@@ -230,8 +242,6 @@ img {
 }
 .promo-slider-button {
   background-color: var(--main-red);
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .promo-slider-button:hover {
@@ -256,9 +266,6 @@ img {
   line-height: 30px;
   text-transform: uppercase;
 }
-.popular-button {
-  background-color: var(--main-red);
-}
 
 .popular-products-item {
   font-family: "PT Sans", Arial, sans-serif;
@@ -275,6 +282,7 @@ img {
 
 .price-crossout {
   text-decoration: line-through;
+  color: var(--crossout-gray);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -333,8 +341,6 @@ img {
 }
 .apply-for-loan-button {
   color: var(--main-white);
-  font-size: 14px;
-  line-height: 18px;
   background-color: var(--apply-for-loan-red);
   border-radius: 1px;
 }
@@ -359,11 +365,6 @@ img {
   list-style: "- ";
 }
 
-.about-company-button {
-  background: var(--main-red);
-  font-size: 14px;
-  line-height: 18px;
-}
 /* footer */
 .main-footer {
   background-color: var(--main-dark);

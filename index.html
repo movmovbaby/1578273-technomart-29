@@ -4,14 +4,15 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="page-body">
     <header class="header">
@@ -28,21 +29,19 @@
 
         <!-- здесь будет форма поиска-->
         <a href="" class="menu-bookmarks">
-          <img
+          <svg
             src="https://via.placeholder.com/14x16"
             width="14"
             height="16"
-            alt="Иконка закладки"
-          />
+          ></svg>
           Закладки:
         </a>
         <a href="" class="menu-shopping-cart">
-          <img
+          <svg
             src="https://via.placeholder.com/15x15"
             width="15"
             height="15"
-            alt="Иконка закладки"
-          />
+          ></svg>
           Корзина: 0
         </a>
         <a href="" class="button menu-add-to-cart-button"> Оформить заказ </a>
@@ -62,13 +61,13 @@
       </section>
 
       <a href="" class="login-link">
-        <img
+        <svg
           src="https://via.placeholder.com/20x17"
           width="20"
           height="17"
-          alt="Войти"
-        />войти</a
-      >
+        ></svg>
+        войти
+      </a>
       <a href="" class="registration-link">регистрация</a>
 
       <nav class="main-navigation">
@@ -90,32 +89,32 @@
           <li class="promo-list-item list-item-first">
             <h3>Материалы</h3>
             <a href="" class="button promo-list-button">На любой вкус</a>
-            <img
+            <span class="new-die">new</span>
+            <svg
               src="https://via.placeholder.com/44x65"
               width="44"
               height="65"
-              alt="Иконка ведра с краской"
-            />
+            ></svg>
           </li>
           <li class="promo-list-item list-item-second">
             <h3>Инструмент</h3>
             <a href="" class="button promo-list-button">На все случаи жизни</a>
-            <img
+            <svg
               src="https://via.placeholder.com/44x65"
               width="44"
               height="65"
               alt="Иконка шуруповёрта"
-            />
+            ></svg>
           </li>
           <li class="promo-list-item list-item-third">
             <h3>Техника</h3>
             <a href="" class="button promo-list-button">Для стройки</a>
-            <img
+            <svg
               src="https://via.placeholder.com/44x65"
               width="44"
               height="65"
               alt="Иконка трактора"
-            />
+            ></svg>
           </li>
         </ul>
         <ul class="promo-slider">
@@ -128,9 +127,7 @@
               alt="Рабочий с перфоратором"
             />
             <p class="slider-text">Настоящие мужские игрушки</p>
-            <a href="catalog.html" class="button promo-slider-button">
-              Открыть каталог
-            </a>
+            <a href="catalog.html" class="button"> Открыть каталог </a>
           </li>
           <li class="promo-slider-item">
             <h3 class="slider-item-heading">Дрели</h3>
@@ -150,30 +147,26 @@
           <li class="promo-list-item list-item-fourth">
             <h3>Скидки 50%</h3>
             <a class="button promo-list-button" href="">на 350 товаров</a>
-            <img
+            <svg
               src="https://via.placeholder.com/44x65"
               width="44"
               height="65"
-              alt="Иконка трактора"
-            />
+            ></svg>
           </li>
           <li class="promo-list-item list-item-fifth">
             <h3>Доставка</h3>
             <a class="button promo-list-button" href="">бесплатно</a>
-            <img
+            <svg
               src="https://via.placeholder.com/44x65"
               width="44"
               height="65"
-              alt="Иконка трактора"
-            />
+            ></svg>
           </li>
         </ul>
       </section>
       <section class="popular-products">
-        <h2 class="popular-heading">Популярные товары</h2>
-        <a class="button popular-button" href="catalog.html"
-          >Все популярные товары</a
-        >
+        <h2 class="popular-heading">Популярные товары:</h2>
+        <a class="button" href="catalog.html"> Все популярные товары </a>
         <ul class="popular-products-list">
           <li class="popular-products-item">
             <a href="">
@@ -203,6 +196,7 @@
                 width="184"
                 height="164"
               />
+              <span class="new-die">new</span>
               <span class="price-crossout">22500 Р.</span>
               <span class="price">15500 Р.</span>
             </a>
@@ -225,7 +219,7 @@
           <li class="popular-products-item">
             <a href="">
               <h3 class="popular-products-item-heading">
-                Перфоратор BOSCH BFG 32000
+                Перфоратор BOSCH BFG 2000
               </h3>
               <img
                 src="https://via.placeholder.com/184x164"
@@ -233,14 +227,15 @@
                 width="184"
                 height="164"
               />
+              <span class="new-die">new</span>
               <span class="price">12500 Р.</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="popular-manufacturer">
-        <h2 class="popular-heading">Популярные производители</h2>
-        <a class="button popular-button" href="">Все производители</a>
+        <h2 class="popular-heading">Популярные производители:</h2>
+        <a class="button" href="">Все производители</a>
         <ul class="popular-manufacturer-list">
           <li class="popular-manufacturer-item">
             <a href="">
@@ -370,8 +365,11 @@
         <p class="company-info-text">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
           ремонта и строительства не оставит равнодушными любителей сэкономить
-          на гастарбайтерах. Мы можем доставить ваш товар в самые отдаленные
-          точки России! Техномарт работает со многими транспортными компаниями:
+          на гастарбайтерах.
+        </p>
+        <p class="company-info-text">
+          Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="company-partners">
           <li class="company-partner">Деловые линии</li>
@@ -394,9 +392,7 @@
             />
           </a>
         </p>
-        <a class="button about-company-button" href="">
-          Заблудились? Пишите нам!
-        </a>
+        <a class="button" href=""> Заблудились? Пишите нам! </a>
       </section>
     </main>
 
