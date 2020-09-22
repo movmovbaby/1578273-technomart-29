@@ -70,6 +70,7 @@ img {
 
 .new-die {
   background-color: var(--main-red);
+  color: var(--main-white);
   font-size: 14px;
   line-height: 18px;
   text-transform: capitalize;
@@ -172,11 +173,12 @@ img {
 .navigation-item a {
   color: var(--main-white);
 }
+
 .main-navigation a:hover {
   background-color: var(--main-darken);
 }
 
-.main-navigation a:active {
+.navigation-item a:active {
   opacity: 0.5;
 }
 /* end of site navigation */
@@ -432,6 +434,7 @@ img {
 .feedback a {
   color: var(--footer-promo-brown);
 }
+
 .developed-by {
   color: var(--main-white);
   font-size: 16px;
@@ -439,4 +442,14 @@ img {
 }
 .developed-by a {
   color: var(--footer-promo-brown);
+}
+
+.feedback a:hover,
+.developed-by a:hover {
+  text-decoration: underline;
+}
+.feedback a:active,
+.developed-by a:active {
+  color: var(--main-red);
+  text-decoration: none;
 }
