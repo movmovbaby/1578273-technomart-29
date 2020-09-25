@@ -219,7 +219,14 @@ img {
 .breadcrumbs a {
   color: var(--main-black);
 }
-
+.breadcrumbs-link:hover {
+  text-decoration: underline;
+}
+.breadcrumbs-link:active,
+.breadcrumbs-link:focus {
+  opacity: 0.5;
+  text-decoration: none;
+}
 /* Promo */
 .promo {
   background-color: var(--main-white);
@@ -441,6 +448,12 @@ img {
   color: var(--main-black);
   text-decoration: underline var(--red);
 }
+.sort-button:active,
+.sort-button:focus {
+  text-decoration: none;
+  outline: none;
+  color: var(--red);
+}
 
 .sort-button-increase,
 .sort-button-decrease {
@@ -460,6 +473,15 @@ img {
 .sort-button-decrease:hover {
   color: var(--main-black);
   text-decoration: none;
+}
+
+.sort-button-increase:active,
+.sort-button-decrease:active,
+.sort-button-increase:focus,
+.sort-button-decrease:focus {
+  text-decoration: none;
+  outline: none;
+  color: var(--red);
 }
 
 .sort-button-active {
@@ -495,6 +517,7 @@ img {
   background-color: var(--green);
   opacity: 0;
 }
+
 .to-bookmarks-button {
   background-color: transparent;
   border: 3px solid var(--green);
@@ -515,9 +538,7 @@ img {
 .catalog-item:hover .to-bookmarks-button {
   opacity: 1;
 }
-.catalog-item:hover img {
-  opacity: 0;
-}
+
 .to-bookmarks-button:hover {
   border-color: var(--main-dark);
 }
@@ -530,6 +551,7 @@ img {
 .buy-button:hover {
   background-color: var(--green-hover);
 }
+
 .buy-button:active {
   background-color: var(--green-clicked);
 }
