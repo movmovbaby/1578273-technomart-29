@@ -15,30 +15,21 @@
       <section class="header-menu">
         <h2>Меню</h2>
         <a href="index.html" class="logo">
-          <img
-            src="img/logo.png"
-            width="220"
-            height="68"
-            alt="Логотип интернет-магазина Техномарт"
-          />
+          <img src="img/logo.svg" alt="Логотип «Техномарт»" />
         </a>
 
         <!-- здесь будет форма поиска-->
 
-        <a href="" class="menu-bookmarks">
+        <a href="" class="menu-bookmarks" aria-label="Закладки">
           <svg
             width="14"
             height="16"
             viewBox="0 0 14 16"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g opacity="0.3">
-              <path
-                d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
-                fill="white"
-              />
-            </g>
+            <path
+              d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
+            />
           </svg>
           Закладки: 0
         </a>
@@ -47,25 +38,19 @@
             width="15"
             height="15"
             viewBox="0 0 15 15"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g opacity="0.3">
-              <path
-                d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-                fill="white"
-              />
-              <path
-                d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-                fill="white"
-              />
-              <path
-                d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
-                fill="white"
-              />
-            </g>
+            <path
+              d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+            />
+            <path
+              d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+            />
+            <path
+              d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+            />
           </svg>
-          Корзина:
+          Корзина: 10
         </a>
         <a href="" class="button menu-add-to-cart-button">Оформить заказ</a>
       </section>
@@ -76,22 +61,25 @@
 
       <section class="header-contacts">
         <h2>Контактные данные</h2>
-        <a href="tel:+78125550555" class="header-contact-phone">
+        <a
+          href="tel:+78125550555"
+          class="header-contact-phone"
+          aria-label="Контиактный телефон"
+        >
           <svg
             width="19"
             height="19"
             viewBox="0 0 19 19"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
+              class="icon-phone"
               d="M15.572 18.985H14.631C10.502 18.497 7.474 16.577 5.272 14.121C3.062 11.66 1.318 8.49202 0.977997 4.22802V3.08402C1.056 2.31002 1.437 1.78002 1.876 1.32702C2.425 0.76602 3.25 0.0440198 4.002 0.0190198C4.556 0.00101977 5.502 0.39902 5.881 0.91802C6.21 1.36402 6.385 2.25702 6.537 2.92102C6.691 3.59202 7.042 4.56402 6.945 5.21002C6.797 6.21702 5.458 6.64402 5.066 7.37602C6.373 10.511 8.509 12.815 11.359 14.407C12.074 14.015 12.705 12.835 13.691 12.812C14.05 12.803 14.509 12.99 14.875 13.098C15.277 13.219 15.625 13.373 15.979 13.506C16.575 13.73 17.627 14.027 17.983 14.527C18.348 15.04 18.553 15.883 18.473 16.406C18.309 17.447 16.594 18.603 15.572 18.985Z"
-              fill="#B7BFC8"
             />
           </svg>
           +7 (812) 555-05-55
         </a>
-        <p class="header-contact-address">
+        <p class="header-contact-address" aria-label="Адрес">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
       </section>
@@ -99,42 +87,45 @@
       <section class="account-information">
         <h2>Информация о пользователе</h2>
         <div class="account-user">
-          <a href="">
+          <a href="" class="account-user-link" aria-label="Ссылка на аккаунт">
             <svg
               width="20"
               height="18"
               viewBox="0 0 20 18"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"
-                fill="#C5C5C5"
               />
             </svg>
             Равшан Джамшутович
           </a>
-          <a href="">
+          <a href="" class="account-user-logout" aria-label="Выйти из аккаунта">
             <svg
               width="20"
               height="17"
               viewBox="0 0 20 17"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z"
-                fill="#C5C5C5"
-              />
+              <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" />
               <path
                 d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z"
-                fill="#C5C5C5"
               />
             </svg>
           </a>
         </div>
-        <a href="" class="account-orders">Мои заказы</a>
-        <a href="" class="account-personal">Личный кабинет</a>
+        <ul class="account-nav">
+          <li class="account-nav-item">
+            <a href="" class="account-orders" aria-label="Мои заказы"
+              >Мои заказы</a
+            >
+          </li>
+          <li class="account-nav-item">
+            <a href="" class="account-personal" aria-label="Личный кабинет"
+              >Личный кабинет</a
+            >
+          </li>
+        </ul>
       </section>
 
       <nav class="main-navigation">
@@ -152,29 +143,34 @@
 
     <main class="container">
       <ul class="breadcrumbs">
-        <li class="breadcrumbs-link">
-          <a href="index.html">
+        <li class="breadcrumbs-item">
+          <a
+            href="index.html"
+            class="breadcrumbs-link"
+            aria-label="На главную страницу"
+          >
             <svg
               width="14"
               height="12"
               viewBox="0 0 14 12"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z"
-                fill="#C1C6CE"
               />
               <path
                 d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z"
-                fill="#C1C6CE"
               />
             </svg>
           </a>
         </li>
-        <li class="breadcrumbs-link"><a href="">Каталог</a></li>
-        <li class="breadcrumbs-link"><a href="">Инструменты</a></li>
-        <li class="breadcrumbs-link">Перфораторы</li>
+        <li class="breadcrumbs-item">
+          <a href="" class="breadcrumbs-link">Каталог</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="" class="breadcrumbs-link">Инструменты</a>
+        </li>
+        <li class="breadcrumbs-item">Перфораторы</li>
       </ul>
 
       <h2 class="catalog-header">Перфораторы</h2>
@@ -185,42 +181,65 @@
 
       <section class="sort-control">
         <h2 class="sort-header">Сортировка:</h2>
-        <button type="button" class="sort-button sort-button-active">
+        <button
+          type="button"
+          class="sort-button sort-button-active"
+          aria-label="Сортировать по цене"
+        >
           По цене
         </button>
-        <button type="button" class="sort-button">По типу</button>
-        <button type="button" class="sort-button">По функционалу</button>
-        <button type="button" class="sort-button-increase sort-button-active">
+        <button
+          type="button"
+          class="sort-button"
+          aria-label="Сортировать по типу"
+        >
+          По типу
+        </button>
+        <button
+          type="button"
+          class="sort-button"
+          aria-label="Сортировать по функционалу"
+        >
+          По функционалу
+        </button>
+
+        <button
+          type="button"
+          class="sort-button sort-button-active"
+          aria-label="Сортировать по возрастанию"
+        >
           <svg
             width="11"
             height="10"
             viewBox="0 0 11 10"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M5.5 0L11 10L0 10" fill="#EE3643" />
+            <path d="M5.5 0L11 10L0 10" />
           </svg>
         </button>
-        <button type="button" class="sort-button-decrease">
+        <button
+          type="button"
+          class="sort-button"
+          aria-label="Сортировать по убыванию"
+        >
           <svg
             width="11"
             height="10"
             viewBox="0 0 11 10"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M5.5 10L0 0H11" fill="#C5C5C5" />
+            <path d="M5.5 10L0 0H11" />
           </svg>
         </button>
       </section>
       <section>
         <h2>Список товаров</h2>
-        <ul class="catalog-products-list">
+        <ul class="catalog-products-list" aria-label="Список товаров">
           <li class="catalog-item">
             <a href="">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img
-                src="img/bfg6000.jpg"
+                src="img/bfg6000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 6000"
@@ -233,7 +252,7 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img
-                src="img/bfg6000.jpg"
+                src="img/bfg6000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 6000"
@@ -246,16 +265,36 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img
-                src="img/bfg6000.jpg"
+                src="img/bfg6000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 6000"
               />
 
-              <button type="button" class="buy-button">
-                <svg width="15" height="15"></svg>Купить
+              <button type="button" class="buy-button" aria-label="Купить">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                  />
+                  <path
+                    d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                  />
+                  <path
+                    d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                  />
+                </svg>
+                Купить
               </button>
-              <button type="button" class="to-bookmarks-button">
+              <button
+                type="button"
+                class="to-bookmarks-button"
+                aria-label="Добавить в закладки"
+              >
                 В закладки
               </button>
 
@@ -268,7 +307,7 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <img
-                src="img/bfg3000.jpg"
+                src="img/bfg3000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 3000"
@@ -282,7 +321,7 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img
-                src="img/bfg6000.jpg"
+                src="img/bfg6000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 6000"
@@ -295,7 +334,7 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <img
-                src="img/bfg3000.jpg"
+                src="img/bfg3000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 2000"
@@ -308,7 +347,7 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <img
-                src="img/bfg3000.jpg"
+                src="img/bfg3000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 3000"
@@ -321,7 +360,7 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img
-                src="img/bfg6000.jpg"
+                src="img/bfg6000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 6000"
@@ -334,7 +373,7 @@
             <a href="">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <img
-                src="img/bfg3000.jpg"
+                src="img/bfg3000.png"
                 width="220"
                 height="318"
                 alt="Перфоратор BOSCH BFG 2000"
@@ -347,11 +386,17 @@
       </section>
       <section>
         <h2 class="pagination">Пагинация</h2>
-        <ul class="pagination-list">
+        <ul class="pagination-list" aria-label="Список страниц">
           <li class="pagination-item pagination-item-active">1</li>
-          <li class="pagination-item"><a href="">2</a></li>
-          <li class="pagination-item"><a href="">3</a></li>
-          <li class="pagination-item"><a href="">Следующая</a></li>
+          <li class="pagination-item">
+            <a href="" class="pagination-link">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-link">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-link">Следующая</a>
+          </li>
         </ul>
       </section>
       <section class="about-perforators">
@@ -370,13 +415,8 @@
     <footer class="page-footer main-footer">
       <section class="footer-navigation">
         <h2>Навигация</h2>
-        <a class="page-logo" href="">
-          <img
-            src="IMG/logo.png"
-            width="220"
-            height="68"
-            alt="Логотип интернет-магазина Техномарт"
-          />
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="Логотип «Техномарт»" />
         </a>
         <ul class="footer-navigation-list">
           <li><a href="" class="footer-navigation-link"> Компания</a></li>
@@ -416,21 +456,13 @@
           <li class="social-item">
             <a href="vk.com" class="social-link">
               <svg
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
+                width="26"
+                height="15"
+                viewBox="0 0 26 15"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z"
-                  fill="#212A3A"
-                />
-                <path
-                  d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z"
-                  fill="white"
+                  d="M15.5403 11.7281C16.4609 11.4384 17.6395 13.6406 18.8943 14.4834C19.836 15.1219 20.5573 14.9841 20.5573 14.9841L23.9017 14.9372C23.9017 14.9372 25.6495 14.8322 24.8232 13.4803C24.7549 13.3678 24.3389 12.4781 22.334 10.6472C20.2376 8.73186 20.5217 9.04218 23.0456 5.73093C24.5835 3.71249 25.1988 2.47968 25.0062 1.95468C24.8213 1.44936 23.6918 1.58061 23.6918 1.58061L19.9237 1.60593C19.5568 1.60686 19.2458 1.71749 19.1042 2.08874C19.1013 2.09249 18.5062 3.65061 17.7127 4.9753C16.0362 7.77749 15.3669 7.92655 15.0896 7.75124C14.4531 7.3453 14.6139 6.1228 14.6139 5.25374C14.6139 2.5378 15.0299 1.4053 13.7992 1.1128C13.388 1.0153 13.0876 0.951552 12.0389 0.942177C10.6985 0.922489 9.56027 0.942177 8.91508 1.25061C8.48656 1.45968 8.15819 1.91811 8.35753 1.94436C8.6079 1.97718 9.1693 2.09436 9.46975 2.49374C9.8559 3.01124 9.84434 4.17093 9.84434 4.17093C9.84434 4.17093 10.0649 7.36874 9.32434 7.7653C8.8159 8.03718 8.12064 7.48218 6.62516 4.9378C5.86153 3.63655 5.28471 2.19843 5.28471 2.19843C5.28471 2.19843 5.17301 1.93124 4.97079 1.78499C4.73005 1.61155 4.39301 1.55624 4.39301 1.55624L0.816563 1.57874C0.816563 1.57874 0.27923 1.59374 0.0818227 1.82436C-0.0934366 2.02874 0.0673782 2.45061 0.0673782 2.45061C0.0673782 2.45061 2.86864 8.90155 6.04064 12.1509C8.94879 15.1341 12.2537 14.9362 12.2537 14.9362H13.7511C13.7511 14.9362 14.2027 14.8856 14.4338 14.6437C14.6495 14.4187 14.6399 13.9959 14.6399 13.9959C14.6399 13.9959 14.61 12.0187 15.5403 11.7281Z"
                 />
               </svg>
             </a>
@@ -438,21 +470,13 @@
           <li class="social-item">
             <a href="fb.com" class="social-link">
               <svg
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
+                width="12"
+                height="22"
+                viewBox="0 0 12 22"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z"
-                  fill="#212A3A"
-                />
-                <path
-                  d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z"
-                  fill="white"
+                  d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z"
                 />
               </svg>
             </a>
@@ -460,23 +484,15 @@
           <li class="social-item">
             <a href="instagram.com" class="social-link">
               <svg
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
-                  d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z"
-                  fill="#212A3A"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z"
-                  fill="white"
+                  d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
                 />
               </svg>
             </a>
