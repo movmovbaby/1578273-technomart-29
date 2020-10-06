@@ -288,7 +288,7 @@ img {
 }
 
 .header-contact-phone {
-  border: 3px solid var(--gray);
+  border: 3px solid var(--main-white);
   color: var(--red);
   font-size: 21px;
   line-height: 30px;
@@ -423,8 +423,6 @@ img {
 /* site navigation */
 .main-navigation {
   background-color: var(--main-dark);
-  outline: 5px solid rgba(230, 44, 11, 0.3);
-  outline-offset: -5px;
 }
 .site-navigation {
   display: flex;
