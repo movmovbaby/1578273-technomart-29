@@ -52,10 +52,6 @@
   box-sizing: border-box;
 }
 
-.icon-phone {
-  fill: var(--icon-phone);
-}
-
 .icon-home {
   fill: var(--icon-home);
 }
@@ -132,7 +128,7 @@ img {
   vertical-align: middle;
   background-color: var(--red);
   box-shadow: inset 0px -5px 0px var(--red-clicked);
-  padding: 11px 55px;
+  padding: 11px 56px;
   margin-bottom: -5px;
 }
 
@@ -146,19 +142,25 @@ img {
 
 .header-menu-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.search-input {
+  padding-top: 9px;
+  margin-left: 38px;
 }
 
 .sub-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .login-list {
   display: flex;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding-left: 70px;
+  padding-top: 46px;
 }
 
 .login-link {
@@ -169,6 +171,11 @@ img {
   line-height: 21px;
   text-transform: capitalize;
   white-space: nowrap;
+  padding: 12px 24px;
+}
+
+.registration-link {
+  margin-left: 10px;
 }
 
 .login-link svg {
@@ -181,17 +188,14 @@ img {
   fill: var(--gray);
 }
 
-.header-contacts {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-}
-
 /* Закладки */
 
 .menu-bookmarks {
   color: var(--main-white);
   font-size: 18px;
   line-height: 24px;
+  margin-left: 27px;
+  margin-top: 10px;
 }
 .menu-bookmarks:active,
 .menu-bookmarks:focus {
@@ -201,6 +205,8 @@ img {
 .menu-bookmarks svg {
   opacity: 0.3;
   fill: var(--main-white);
+  margin-right: 5px;
+  margin-top: 2px;
 }
 
 .menu-bookmarks:hover svg {
@@ -217,6 +223,8 @@ img {
   color: var(--main-white);
   font-size: 18px;
   line-height: 24px;
+  margin-left: 49px;
+  margin-top: 10px;
 }
 .menu-shopping-cart:active,
 .menu-shopping-cart:focus {
@@ -226,6 +234,7 @@ img {
 .menu-shopping-cart svg {
   opacity: 0.3;
   fill: var(--main-white);
+  margin-right: 5px;
 }
 
 .menu-shopping-cart:hover svg {
@@ -247,6 +256,11 @@ img {
   color: var(--main-white);
   font-size: 18px;
   line-height: 24px;
+  margin-left: 27px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 19px;
+  padding-right: 16px;
 }
 .menu-add-to-cart-button:hover {
   background-color: var(--green-hover);
@@ -262,21 +276,39 @@ img {
   font-size: 16px;
   line-height: 23px;
   max-width: 200px;
+  margin-left: 30px;
+  padding-top: 33px;
 }
 
 /* header contacts */
+
+.header-contacts {
+  margin-left: 90px;
+  padding-top: 53px;
+}
+
 .header-contact-phone {
   border: 3px solid var(--gray);
   color: var(--red);
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-right: 41px;
+  padding-left: 35px;
 }
-
+.header-contact-phone svg {
+  fill: var(--icon-phone);
+  margin-right: 12px;
+}
 .header-contact-address {
   color: var(--main-dark);
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 11px;
 }
 
 /* header login and registration */
@@ -288,6 +320,7 @@ img {
   line-height: 21px;
   text-transform: capitalize;
 }
+
 .login-link:hover,
 .registration-link:hover {
   color: var(--red);
