@@ -29,11 +29,20 @@
             class="search-form"
           >
             <input type="search" class="search-input" placeholder="Поиск:" />
-             <button type="submit" class="button-submit"  aria-label="Искать">
-               <svg width="17" height="17" viewBox="0 0 17 17"  xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
-                </svg>
-          </button>
+            <button type="submit" class="button-submit" aria-label="Искать">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                />
+              </svg>
+            </button>
           </form>
           <a href="" class="menu-bookmarks" aria-label="Закладки">
             <svg
@@ -121,7 +130,7 @@
             </a>
           </li>
           <li class="login-list-item">
-            <a href="" class="login-link registration-link">регистрация</a>
+            <a href="" class="registration-link">регистрация</a>
           </li>
         </ul>
       </div>
@@ -221,15 +230,15 @@
         <ul class="promo-slider">
           <li class="promo-slider-item active-slide">
             <div class="slider-content">
-            <h3 class="slider-item-heading">Перфораторы</h3>
-            <p class="slider-text">Настоящие мужские игрушки</p>
-             <a
-              href="catalog.html"
-              class="button promo-slider-button"
-              aria-label="Открыть каталог перфораторов"
-            >
-              Открыть каталог
-            </a>
+              <h3 class="slider-item-heading">Перфораторы</h3>
+              <p class="slider-text">Настоящие мужские игрушки</p>
+              <a
+                href="catalog.html"
+                class="button promo-slider-button"
+                aria-label="Открыть каталог перфораторов"
+              >
+                Открыть каталог
+              </a>
             </div>
             <img
               src="img/perforator.jpg"
@@ -237,8 +246,6 @@
               height="266"
               alt="Рабочий с перфоратором"
             />
-
-
           </li>
           <li class="promo-slider-item">
             <h3 class="slider-item-heading">Дрели</h3>
@@ -336,14 +343,16 @@
               <h3 class="popular-products-item-heading">
                 Перфоратор BOSCH BFG 9000
               </h3>
-              <img
-                src="img/bfg9000.png"
-                width="184"
-                height="164"
-                alt="Перфоратор BOSCH BFG 9000"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="img/bfg9000.png"
+                  width="184"
+                  height="164"
+                  alt="Перфоратор BOSCH BFG 9000"
+                />
+              </div>
               <span class="price-crossout">32500 Р.</span>
-              <span class="price">25500 Р.</span>
+              <button type="button" class="button price">25500 Р.</button>
             </a>
           </li>
           <li class="popular-products-item">
@@ -351,15 +360,16 @@
               <h3 class="popular-products-item-heading">
                 Перфоратор BOSCH BFG 3000
               </h3>
-
-              <img
-                src="img/bfg3000.png"
-                width="184"
-                height="164"
-                alt="Перфоратор BOSCH BFG 3000"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="img/bfg3000.png"
+                  width="127"
+                  height="112"
+                  alt="Перфоратор BOSCH BFG 3000"
+                />
+              </div>
               <span class="price-crossout">22500 Р.</span>
-              <span class="price">15500 Р.</span>
+              <button type="button" class="button price">15500 Р.</button>
               <span class="new-die">new</span>
             </a>
           </li>
@@ -368,14 +378,16 @@
               <h3 class="popular-products-item-heading">
                 Перфоратор BOSCH BFG 6000
               </h3>
-              <img
-                src="img/bfg6000.png"
-                width="184"
-                height="164"
-                alt="Перфоратор BOSCH BFG 6000"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="img/bfg6000.png"
+                  width="144"
+                  height="128"
+                  alt="Перфоратор BOSCH BFG 6000"
+                />
+              </div>
               <span class="price-crossout">30500 Р.</span>
-              <span class="price">25500 Р.</span>
+              <button type="button" class="button price">25500 Р.</button>
             </a>
           </li>
           <li class="popular-products-item">
@@ -383,15 +395,18 @@
               <h3 class="popular-products-item-heading">
                 Перфоратор BOSCH BFG 2000
               </h3>
-              <img
-                src="img/bfg3000.png"
-                width="184"
-                height="164"
-                alt="Перфоратор BOSCH BFG 2000"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="img/bfg3000.png"
+                  width="127"
+                  height="114"
+                  alt="Перфоратор BOSCH BFG 2000"
+                />
+              </div>
+              <span class="price-crossout"></span>
+              <button type="button" class="button price">12500 Р.</button>
 
-              <span class="price">12500 Р.</span>
-              <span class="new-die">new</span>
+              <div class="new-die">new</div>
             </a>
           </li>
         </ul>
@@ -495,23 +510,25 @@
 
           <div class="services-holder">
             <ul class="services-list">
-              <li class="service-item ">
+              <li class="service-item service-active">
                 <a>Доставка</a>
               </li>
-              <li class="service-item service-active"><a>Гарантия</a></li>
+              <li class="service-item"><a>Гарантия</a></li>
               <li class="service-item"><a>Кредит</a></li>
             </ul>
             <div>
-              <div class="service-description delivery ">
+              <div
+                class="service-description delivery service-description-active"
+              >
                 <!-- фоновая картинка -->
                 <h3 class="service-description-heading">доставка</h3>
                 <p class="service-description-text">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! </br>Ведь мы неплохо заработаем,</br> поднимая его
-                  на ваш этаж!
+                  совершенно бесплатно! <br />Ведь мы неплохо заработаем,<br />
+                  поднимая его на ваш этаж!
                 </p>
               </div>
-              <div class="service-description guarantee service-description-active">
+              <div class="service-description guarantee">
                 <!-- фоновая картинка -->
                 <h3 class="service-description-heading">гарантия</h3>
                 <p class="service-description-text">
@@ -521,7 +538,7 @@
                   товар на новый. Дом уж восстановите как-нибудь сами.
                 </p>
               </div>
-              <div class="service-description credit ">
+              <div class="service-description credit">
                 <!-- фоновая картинка -->
                 <h3 class="service-description-heading">кредит</h3>
                 <p class="service-description-text">
@@ -534,6 +551,7 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
 
       <div class="contact-columns container">
@@ -545,7 +563,7 @@
             сэкономить на гастарбайтерах.
           </p>
           <p class="company-info-text">
-            Мы можем доставить ваш товар в самые отдаленные точки России!</br>
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br />
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="company-partners" aria-label="Партнёры">
@@ -553,25 +571,25 @@
             <li class="company-partner">Автотрейдинг</li>
             <li class="company-partner">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="" class="button  company-info-button">Подробнее о компании</a>
+          <a href="" class="button company-info-button">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
           <h2 class="company-contacts-heading">Контакты</h2>
           <p class="company-contacts-text">
             Вы можете забрать товар сами, заехав в наш офис:
-
           </p>
           <a href="https://yandex.ru/maps/-/CCQx6Zu~GA" class="map-img">
-              <img
-                src="img/map.png"
-                width="300"
-                height="158"
-
-                alt="Карта офиса по адресу: город Санкт-Петербург, улица Конюшенная, 19"
-              />
-            </a>
-          <a class="button contacts-button" href=""> Заблудились? Пишите нам! </a>
+            <img
+              src="img/map.png"
+              width="300"
+              height="158"
+              alt="Карта офиса по адресу: город Санкт-Петербург, улица Конюшенная, 19"
+            />
+          </a>
+          <a class="button contacts-button" href=""
+            >заблудились? напишите нам!</a
+          >
         </section>
       </div>
     </main>
@@ -579,7 +597,7 @@
       <section class="footer-navigation container">
         <h2 class="visually-hidden">Навигация</h2>
         <a class="logo-footer">
-          <img src="img/logo-footer.svg"  alt="Логотип «Техномарт»" />
+          <img src="img/logo-footer.svg" alt="Логотип «Техномарт»" />
         </a>
         <ul class="footer-navigation-list">
           <li><a href="" class="footer-navigation-link">Компания</a></li>
@@ -613,7 +631,7 @@
         <div class="footer-contacts container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="copyright">
-            © 2010–2019 Компания «Техномарт»<br />Все права защищены
+            © 2010–2019 Компания «Техномарт» Все права защищены
           </p>
           <ul class="social-links">
             <li class="social-item">
