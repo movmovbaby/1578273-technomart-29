@@ -222,21 +222,17 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div
-                        class="bar"
-                        style="width: 70%; margin-left: 0%"
-                      ></div>
+                      <div class="bar" style="width: 70%; margin-left: 0%">
+                        <button
+                          type="button"
+                          class="toggle toggle-min"
+                        ></button>
+                        <button
+                          type="button"
+                          class="toggle toggle-max"
+                        ></button>
+                      </div>
                     </div>
-                    <div
-                      class="toggle toggle-min"
-                      tabindex="0"
-                      style="left: 9%"
-                    ></div>
-                    <div
-                      class="toggle toggle-max"
-                      tabindex="0"
-                      style="left: 73%"
-                    ></div>
                   </div>
 
                   <div class="price-controls">
@@ -355,8 +351,9 @@
 
           <div class="sort-wrapper">
             <section class="sort-control">
-              <h2 class="sort-header">Сортировка:</h2>
-              <div class="control-wrapper">
+              <div class="sort-control-holder">
+                <h2 class="sort-header">Сортировка:</h2>
+
                 <button
                   type="button"
                   class="sort-button sort-button-active"
@@ -378,36 +375,36 @@
                 >
                   По функционалу
                 </button>
-                <div class="up-down-control-wrapper">
-                  <button
-                    type="button"
-                    class="sort-button sort-button-active"
-                    aria-label="Сортировать по возрастанию"
+              </div>
+              <div class="up-down-control-wrapper">
+                <button
+                  type="button"
+                  class="sort-button sort-button-active"
+                  aria-label="Сортировать по возрастанию"
+                >
+                  <svg
+                    width="11"
+                    height="10"
+                    viewBox="0 0 11 10"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      width="11"
-                      height="10"
-                      viewBox="0 0 11 10"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M5.5 0L11 10L0 10" />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    class="sort-button"
-                    aria-label="Сортировать по убыванию"
+                    <path d="M5.5 0L11 10L0 10" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="sort-button"
+                  aria-label="Сортировать по убыванию"
+                >
+                  <svg
+                    width="11"
+                    height="10"
+                    viewBox="0 0 11 10"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      width="11"
-                      height="10"
-                      viewBox="0 0 11 10"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M5.5 10L0 0H11" />
-                    </svg>
-                  </button>
-                </div>
+                    <path d="M5.5 10L0 0H11" />
+                  </svg>
+                </button>
               </div>
             </section>
             <section class="catalog-list">
@@ -429,6 +426,38 @@
                     <span class="price-crossout">30500 Р.</span>
                     <button type="button" class="button price">25500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <a href="">
@@ -446,6 +475,38 @@
                     <span class="price-crossout">30500 Р.</span>
                     <button type="button" class="button price">25500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <a href="">
@@ -462,7 +523,6 @@
                     </div>
                     <span class="new-die">new</span>
                     <span class="price-crossout">30500 Р.</span>
-
                     <button type="button" class="button price">25500 Р.</button>
                   </a>
                   <div class="catalog-item-on-hover">
@@ -515,6 +575,38 @@
                     <span class="price-crossout">22500 Р.</span>
                     <button type="button" class="button price">15500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <a href="">
@@ -532,6 +624,38 @@
                     <span class="price-crossout">32500 Р.</span>
                     <button type="button" class="button price">25500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <a href="">
@@ -549,6 +673,38 @@
                     <span class="new-die">new</span>
                     <button type="button" class="button price">12500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <a href="">
@@ -567,6 +723,38 @@
                     <span class="price-crossout">22500 Р.</span>
                     <button type="button" class="button price">15500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <a href="">
@@ -584,6 +772,38 @@
                     <span class="price-crossout">32500 Р.</span>
                     <button type="button" class="button price">25500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <a href="">
@@ -601,6 +821,38 @@
                     <span class="new-die">new</span>
                     <button type="button" class="button price">12500 Р.</button>
                   </a>
+                  <div class="catalog-item-on-hover">
+                    <button
+                      type="button"
+                      class="buy-button"
+                      aria-label="Купить"
+                    >
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        />
+                        <path
+                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        />
+                        <path
+                          d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
+                        />
+                      </svg>
+                      Купить
+                    </button>
+                    <button
+                      type="button"
+                      class="to-bookmarks-button"
+                      aria-label="Добавить в закладки"
+                    >
+                      В закладки
+                    </button>
+                  </div>
                 </li>
               </ul>
             </section>
@@ -752,5 +1004,43 @@
         </div>
       </section>
     </footer>
+    <section class="cart-add">
+      <svg
+        width="66"
+        height="66"
+        viewBox="0 0 66 66"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z"
+          fill="#63A63E"
+        />
+        <path
+          d="M49.641 21.066C49.2498 20.6773 48.6181 20.6773 48.227 21.066L29.788 39.504C29.3968 39.8928 28.7651 39.8928 28.374 39.504L20.234 31.365C19.8428 30.9763 19.2111 30.9763 18.82 31.365L15.285 34.9C14.8962 35.2912 14.8962 35.9228 15.285 36.314L28.374 49.404C28.7651 49.7928 29.3968 49.7928 29.788 49.404L33.324 45.868L34.738 44.454L53.176 26.016C53.5647 25.6248 53.5647 24.9932 53.176 24.602L49.641 21.066Z"
+          fill="white"
+        />
+      </svg>
+
+      <p>Товар добавлен в корзину!</p>
+      <div class="cart-add-buttons">
+        <a href="" class="button popup-order-button">Оформить заказ</a>
+        <button type="button" class="popup-button">Продолжить покупки</button>
+      </div>
+      <button type="button" class="popup-button-cross">
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z"
+            fill="#EE3643"
+          />
+        </svg>
+      </button>
+    </section>
   </body>
 </html>
