@@ -827,22 +827,67 @@
         action="https://echo.htmlacademy.ru/"
         method="POST"
         class="write-us-form"
+        id="write-us-form-id"
       >
-        <label class="write-us-form-name">Ваше имя:<input type="text" /></label>
-        <label class="write-us-form-email">
-          Ваш e-mail:<input type="email" />
-        </label>
-        <label class="write-us-form-textarea">
-          <textarea
-            name="write-us-form-text"
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-        </label>
-
-        <button type="submit">Отправить</button>
+        <p>
+          <label class="write-us-form-name" for="write-us-text-id">
+            Ваше имя:<br />
+            <input
+              type="text"
+              placeholder="Имя Фамилия"
+              id="write-us-text-id"
+              autofocus
+            />
+          </label>
+        </p>
+        <p>
+          <label class="write-us-form-email">
+            Ваш e-mail:<br /><input
+              type="email"
+              placeholder="mail@example.com"
+            />
+          </label>
+        </p>
+        <p>
+          <label class="write-us-form-textarea">
+            Текст письма:<br />
+            <textarea
+              name="write-us-form-text"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </p>
       </form>
+      <div class="write-us-bottom">
+        <button type="submit" form="write-us-form-id" class="button">
+          Отправить
+        </button>
+      </div>
+      <button
+        class="write-us-close"
+        type="button"
+        aria-label="Закрыть"
+      ></button>
+    </section>
+    <section class="popup-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <!-- <img
+        src="img/map.png"
+        width="943"
+        height="449"
+        alt="Карта офиса по адресу: город Санкт-Петербург, улица Конюшенная, 19"
+      /> -->
+
+      <iframe
+        src="https://yandex.ru/map-widget/v1/-/CCQx6Zu3TA"
+        width="943"
+        height="449"
+        allowfullscreen
+        title="Карта офиса по адресу: город Санкт-Петербург, улица Конюшенная, 19"
+      ></iframe>
+      <button type="button" class="map-close" aria-label="Закрыть"></button>
     </section>
   </body>
 </html>
