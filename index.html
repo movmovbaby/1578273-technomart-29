@@ -28,7 +28,12 @@
             method="POST"
             class="search-form"
           >
-            <input type="search" name="search" class="search-input" placeholder="Поиск:" />
+            <input
+              type="search"
+              name="search"
+              class="search-input"
+              placeholder="Поиск:"
+            />
             <button type="submit" class="button-submit" aria-label="Искать">
               <svg
                 width="17"
@@ -235,60 +240,88 @@
           </li>
         </ul>
         <div class="slider">
-        <ul class="promo-slider-list">
-          <li class="promo-slider-item active-slide">
-            <div class="slider-content">
-              <h3 class="slider-item-heading">Перфораторы</h3>
-              <p class="slider-text">Настоящие мужские игрушки</p>
-            </div>
-            <a
-              href="catalog.html"
-              class="button promo-slider-button"
-              aria-label="Открыть каталог перфораторов"
+          <ul class="promo-slider-list">
+            <li class="promo-slider-item active-slide">
+              <div class="slider-content">
+                <h3 class="slider-item-heading">Перфораторы</h3>
+                <p class="slider-text">Настоящие мужские игрушки</p>
+              </div>
+              <a
+                href="catalog.html"
+                class="button promo-slider-button"
+                aria-label="Открыть каталог перфораторов"
+              >
+                Открыть каталог
+              </a>
+              <img
+                src="img/perforator.jpg"
+                width="620"
+                height="266"
+                alt="Рабочий с перфоратором"
+              />
+            </li>
+            <li class="promo-slider-item">
+              <div class="slider-content">
+                <h3 class="slider-item-heading">Дрели</h3>
+                <p class="slider-text">Соседям на радость!</p>
+              </div>
+              <a
+                href="catalog.html"
+                class="button promo-slider-button"
+                aria-label="Открыть каталог дрелей"
+              >
+                Открыть каталог
+              </a>
+              <img
+                src="img/drill.jpg"
+                width="620"
+                height="266"
+                alt="Рабочий с дрелью"
+              />
+            </li>
+          </ul>
+          <button
+            class="slider-button to-left"
+            type="button"
+            aria-label="Влево"
+          >
+            <svg
+              width="23"
+              height="41"
+              viewBox="0 0 23 41"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Открыть каталог
-            </a>
-            <img
-              src="img/perforator.jpg"
-              width="620"
-              height="266"
-              alt="Рабочий с перфоратором"
-            />
-          </li>
-          <li class="promo-slider-item">
-            <div class="slider-content">
-              <h3 class="slider-item-heading">Дрели</h3>
-              <p class="slider-text">Соседям на радость!</p>
-            </div>
-            <a
-              href="catalog.html"
-              class="button promo-slider-button"
-              aria-label="Открыть каталог дрелей"
+              <path
+                d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button
+            class="slider-button to-right"
+            type="button"
+            aria-label="Вправо"
+          >
+            <svg
+              width="23"
+              height="41"
+              viewBox="0 0 23 41"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Открыть каталог
-            </a>
-            <img
-              src="img/drill.jpg"
-              width="620"
-              height="266"
-              alt="Рабочий с дрелью"
-            />
-          </li>
-        </ul>
-        <button class="slider-button to-left" type="button" aria-label="Влево">
-          <svg width="23" height="41" viewBox="0 0 23 41"  xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z" fill="white"/>
-          </svg>
-        </button>
-        <button class="slider-button to-right" type="button" aria-label="Вправо">
-          <svg width="23" height="41" viewBox="0 0 23 41"  xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z" fill="white"/>
-          </svg>
-        </button>
-        <div class="slider-dots">
-        <button type="button"  aria-label="Слайд"></button>
-        <button class="current" type="button" aria-label="Активный  слайд"></button>
-        </div>
+              <path
+                d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <div class="slider-dots">
+            <button type="button" aria-label="Слайд"></button>
+            <button
+              class="current"
+              type="button"
+              aria-label="Активный  слайд"
+            ></button>
+          </div>
         </div>
         <ul class="promo-list promo-list-vertical">
           <li class="promo-list-item green-style">
@@ -378,11 +411,12 @@
                   alt="Перфоратор BOSCH BFG 9000"
                 />
               </div>
-              <span class="price-crossout">32500 Р.</span>
-              <button type="button" class="button price">25500 Р.</button>
             </a>
+            <span class="price-crossout">32500 Р.</span>
+            <button type="button" class="button price">25500 Р.</button>
+
             <div class="popular-products-item-on-hover">
-              <a  class="buy-button" aria-label="Добавить товар в корзину">
+              <a class="buy-button" aria-label="Добавить товар в корзину">
                 <svg
                   width="15"
                   height="15"
@@ -424,10 +458,11 @@
                   alt="Перфоратор BOSCH BFG 3000"
                 />
               </div>
-              <span class="price-crossout">22500 Р.</span>
-              <button type="button" class="button price">15500 Р.</button>
-              <span class="new-die">new</span>
             </a>
+            <span class="price-crossout">22500 Р.</span>
+            <button type="button" class="button price">15500 Р.</button>
+            <span class="new-die">new</span>
+
             <div class="popular-products-item-on-hover">
               <a class="buy-button" aria-label="Добавить товар в корзину">
                 <svg
@@ -471,9 +506,10 @@
                   alt="Перфоратор BOSCH BFG 6000"
                 />
               </div>
-              <span class="price-crossout">30500 Р.</span>
-              <button type="button" class="button price">25500 Р.</button>
             </a>
+            <span class="price-crossout">30500 Р.</span>
+            <button type="button" class="button price">25500 Р.</button>
+
             <div class="popular-products-item-on-hover">
               <a class="buy-button" aria-label="Добавить товар в корзину">
                 <svg
@@ -517,13 +553,13 @@
                   alt="Перфоратор BOSCH BFG 2000"
                 />
               </div>
-              <span class="price-crossout"></span>
-              <button type="button" class="button price">12500 Р.</button>
-              <div class="new-die">new</div>
-            </button>
             </a>
+            <span class="price-crossout"></span>
+            <button type="button" class="button price">12500 Р.</button>
+            <div class="new-die">new</div>
+
             <div class="popular-products-item-on-hover">
-             <a class="buy-button" aria-label="Добавить товар в корзину">
+              <a class="buy-button" aria-label="Добавить товар в корзину">
                 <svg
                   width="15"
                   height="15"
