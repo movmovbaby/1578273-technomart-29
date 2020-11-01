@@ -2304,11 +2304,22 @@ input[type="search"]::-webkit-search-results-decoration {
   top: 51%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  /* top: 135px; */
+  /* left: 658px; */
+  /* transform: translateX(-50%); */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   padding: 0;
   padding-top: 37px;
 }
+.write-us-show {
+  display: block;
+  animation: writeUsPopup 0.5s;
+}
+.write-us-error {
+  animation: shake 0.5s;
+}
+
 .write-us-form {
   width: 460px;
   display: flex;
@@ -2317,21 +2328,23 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0;
   padding: 0;
   margin-left: 80px;
-  padding-bottom: 37px;
+  padding-bottom: 28px;
 }
 .write-us-form label {
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .write-us-form p {
   margin: 0;
   padding: 0;
 }
-
+.write-us-form p:last-child {
+  margin-top: 11px;
+}
 .write-us-form input[type="email"],
 .write-us-form input[type="text"] {
   font-family: "PT Sans", Arial, sans-serif;
@@ -2342,10 +2355,10 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 220px;
   border: 2px solid var(--gray);
   border-radius: 2px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-top: 11px;
+  margin-top: 7px;
 }
 
 .write-us-form textarea {
@@ -2354,6 +2367,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border: 2px solid var(--gray);
   border-radius: 2px;
   resize: none;
+  margin-top: 6px;
 }
 
 .write-us-bottom {
@@ -2455,4 +2469,36 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .map-close::after {
   transform: rotate(-45deg);
+}
+
+/* Animations */
+@keyframes writeUsPopup {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

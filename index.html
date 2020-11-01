@@ -28,7 +28,7 @@
             method="POST"
             class="search-form"
           >
-            <input type="search" class="search-input" placeholder="Поиск:" />
+            <input type="search" name="search" class="search-input" placeholder="Поиск:" />
             <button type="submit" class="button-submit" aria-label="Искать">
               <svg
                 width="17"
@@ -519,9 +519,9 @@
               </div>
               <span class="price-crossout"></span>
               <button type="button" class="button price">12500 Р.</button>
-
               <div class="new-die">new</div>
             </button>
+            </a>
             <div class="popular-products-item-on-hover">
               <button type="button" class="buy-button" aria-label="Добавить товар в корзину">
                 <svg
@@ -861,21 +861,25 @@
         id="write-us-form-id"
       >
         <p>
-          <label class="write-us-form-name" for="write-us-text-id">
+          <label class="write-us-form-name" for="write-us-name-id">
             Ваше имя:<br />
             <input
               type="text"
               placeholder="Имя Фамилия"
-              id="write-us-text-id"
+              id="write-us-name-id"
+              name="write-us-name"
               autofocus
             />
           </label>
         </p>
         <p>
-          <label class="write-us-form-email">
-            Ваш e-mail:<br /><input
+          <label class="write-us-form-email" for="write-us-email-id">
+            Ваш e-mail:<br />
+            <input
               type="email"
-              placeholder="mail@example.com"
+              id="write-us-email-id"
+              name="write-us-email"
+              placeholder="email@example.com"
             />
           </label>
         </p>
@@ -883,8 +887,8 @@
           <label class="write-us-form-textarea">
             Текст письма:<br />
             <textarea
-              name="write-us-form-text"
-              id=""
+              id="write-us-text-id"
+              name="write-us-text"
               cols="30"
               rows="10"
             ></textarea>
@@ -904,13 +908,6 @@
     </section>
     <section class="popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!-- <img
-        src="img/map.png"
-        width="943"
-        height="449"
-        alt="Карта офиса по адресу: город Санкт-Петербург, улица Конюшенная, 19"
-      /> -->
-
       <iframe
         src="https://yandex.ru/map-widget/v1/-/CCQx6Zu3TA"
         width="943"
@@ -918,7 +915,14 @@
         allowfullscreen
         title="Карта офиса по адресу: город Санкт-Петербург, улица Конюшенная, 19"
       ></iframe>
+      <img
+        src="img/map.png"
+        width="943"
+        height="449"
+        alt="Карта офиса по адресу: город Санкт-Петербург, улица Конюшенная, 19"
+      />
       <button type="button" class="map-close" aria-label="Закрыть"></button>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
