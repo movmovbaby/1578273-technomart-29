@@ -2313,13 +2313,6 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 0;
   padding-top: 37px;
 }
-.write-us-show {
-  display: block;
-  animation: writeUsPopup 0.5s;
-}
-.write-us-error {
-  animation: shake 0.5s;
-}
 
 .write-us-form {
   width: 460px;
@@ -2434,6 +2427,10 @@ input[type="search"]::-webkit-search-results-decoration {
   transform: translateX(-50%) translateY(-50%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
+.popup-map-show {
+  display: block;
+}
+
 .popup-map img {
   display: block;
 }
@@ -2470,6 +2467,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .map-close::after {
   transform: rotate(-45deg);
+}
+
+.popup-show {
+  display: block;
+  animation: writeUsPopup 0.5s;
+}
+.popup-error {
+  animation: shake 0.5s;
 }
 
 /* Animations */

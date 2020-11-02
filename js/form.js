@@ -20,7 +20,7 @@ try {
 
 contactsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  writeUs.classList.add("write-us-show");
+  writeUs.classList.add("popup-show");
 
   if (storageName && storageEmail) {
     writeUsName.value = storageName;
@@ -33,16 +33,16 @@ contactsLink.addEventListener("click", function (evt) {
 
 writeUsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  writeUs.classList.remove("write-us-show");
-  writeUs.classList.remove("write-us-error");
+  writeUs.classList.remove("popup-show");
+  writeUs.classList.remove("popup-error");
 });
 
 writeUsForm.addEventListener("submit", function (evt) {
   if (!writeUsName.value || !writeUsEmail.value || !writeUsText.value) {
     evt.preventDefault();
-    writeUsForm.classList.remove("write-us-error");
+    writeUsForm.classList.remove("popup-error");
     writeUsForm.offsetWidth = writeUsForm.offsetWidth;
-    writeUsForm.classList.add("write-us-error");
+    writeUsForm.classList.add("popup-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", writeUsName.value);
@@ -53,10 +53,10 @@ writeUsForm.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.code === "Escape") {
-    if (writeUs.classList.contains("write-us-show")) {
+    if (writeUs.classList.contains("popup-show")) {
       evt.preventDefault();
-      writeUs.classList.remove("write-us-show");
-      writeUs.classList.remove("write-us-error");
+      writeUs.classList.remove("popup-show");
+      writeUs.classList.remove("popup-error");
     }
   }
 });
