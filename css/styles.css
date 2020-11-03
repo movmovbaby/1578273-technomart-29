@@ -1194,8 +1194,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .guarantee::after {
   content: "";
   position: absolute;
-  left: 231px;
-  top: 78px;
+  left: 320px;
+  top: 52px;
   width: 468px;
   height: 261px;
   display: block;
@@ -1205,25 +1205,32 @@ input[type="search"]::-webkit-search-results-decoration {
 .credit::after {
   content: "";
   position: absolute;
-  left: 231px;
-  top: 78px;
+  left: 244px;
+  top: 53px;
   width: 468px;
   height: 261px;
   display: block;
   background-image: url("../img/dollar.png");
 }
 
+.guarantee .service-description-text {
+  margin-top: 22px;
+  max-width: 319px;
+}
+
 .apply-for-loan-button {
+  display: inline-block;
+  vertical-align: middle;
   color: var(--main-white);
   border-radius: 2px;
   width: 195px;
   height: 38px;
   text-transform: uppercase;
-  margin-top: 27px;
-  padding-left: 24px;
+  margin-top: 25px;
+  padding-left: 28px;
   padding-right: 24px;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 9px;
 }
 
 /* company info */
