@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.min.css" />
 </head>
 
 <body class="page-body">
@@ -20,7 +20,9 @@
         </a>
 
         <form action="https://echo.htmlacademy.ru/" method="POST" class="search-form">
-          <input type="search" name="search" class="search-input" placeholder="Поиск:" />
+          <label for="search-id" class="visually-hidden">Поиск товаров</label>
+          <input type="search" name="search" id="search-id" class="search-input" placeholder="Поиск:" />
+
           <button type="submit" class="button-submit" aria-label="Искать">
             <svg width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -332,7 +334,7 @@
     <section class="popular-manufacturer container">
       <div class="popular-heading-wrap">
         <h2 class="popular-heading">Популярные производители:</h2>
-        <a href="#" class="button popular-button" aria-label="Открыть каталог производетелей">
+        <a href="#" class="button popular-button">
           Все производители
         </a>
       </div>
@@ -460,7 +462,7 @@
     <section class="footer-navigation container">
       <h2 class="visually-hidden">Навигация</h2>
       <a class="logo-footer">
-        <img src="img/logo-footer.svg" alt="Логотип «Техномарт»" />
+        <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип «Техномарт»" />
       </a>
       <ul class="footer-navigation-list">
         <li><a href="#" class="footer-navigation-link">Компания</a></li>
@@ -597,12 +599,7 @@
       </svg>
     </button>
   </section>
-  <script src="js/form.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/cart-add.js"></script>
-  <script src="js/services.js"></script>
-
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
