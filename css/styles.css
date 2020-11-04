@@ -1558,16 +1558,17 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .range-controls .toggle-min {
-  left: 9px;
+  left: 0;
 }
 
 .range-controls .toggle-max {
-  left: 150px;
+  left: 100%;
 }
 
 .price-controls {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .price-controls input {
@@ -1588,10 +1589,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .price-controls::before {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 18px;
-  height: 20px;
+  content: "";
+  top: 20px;
+  left: 106px;
+  width: 9px;
+  height: 1px;
   background-color: var(--main-black);
 }
 
@@ -2146,6 +2148,10 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: -5px;
 }
 
+.logo-footer:active {
+  background-color: var(--red-hover);
+}
+
 .footer-navigation {
   display: flex;
   justify-content: space-between;
@@ -2359,7 +2365,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border-top: 7px solid var(--red);
   position: fixed;
   top: 50%;
-  left: 50.8%;
+  left: 50%;
   transform: translateX(-50%) translateY(-50%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 67px;
